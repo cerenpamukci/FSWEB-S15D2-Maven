@@ -145,7 +145,7 @@ public class MainTest {
     public void testFindUniqueWordsMethod() {
         assertEquals(StringSet.findUniqueWords().size(), 143);
 
-        List<String> results = StringSet.findUniqueWords().stream().collect(Collectors.toList());
+        List<String> results = StringSet.findUniqueWords().stream().toList();
         assertEquals(results.get(0), "a");
         assertEquals(results.get(results.size()-1), "wrote");
 
